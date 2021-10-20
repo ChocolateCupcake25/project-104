@@ -1,0 +1,23 @@
+body
+{
+    color: white;
+    background-color:coral;
+}
+.heading{
+    width: 80;
+    font-size: 22px; 
+}
+
+.name_of_objects {
+    color: yellow;
+    font-size:30;
+}
+#result_object_name, #result_object_acuracy
+{
+color: yellow;
+}
+#webcam{
+    border: 2px dashed black ;
+    width: 350%;
+    height: 350% ;
+}
