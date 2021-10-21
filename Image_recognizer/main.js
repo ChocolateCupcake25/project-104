@@ -19,3 +19,18 @@ document.getElementById("result").innerHTML='img id="Captured_image" src="'+data
     function modelloaded(){
         console.log('Model Loaded!');
     }
+
+    function check(){
+        img=document.getElementById('captured_image');
+        classifier.classify(img, gotResult);
+    }
+
+    function gotResult(error,result){
+         if (error){
+             console.error(error);
+         } else{
+             console.log(result);
+             document.getElementById("result_object_name").innerHTML=result[0].label;
+             document.getElementById("result_object_acuracy").innerHTML=result[0].confidence.toFixed(3);
+         }
+    }
